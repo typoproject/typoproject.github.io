@@ -1,0 +1,221 @@
+@media (max-width:305px) {
+		.btn-group-toggle{
+		padding-top:5px;
+}
+}
+
+@media (max-width:250px) {
+		.btn-group-toggle{
+		flex-flow: column wrap;
+}
+}
+
+/*----- FONT -----*/
+
+@font-face {
+	font-family: "Label";
+	src: url(font/home/Impact_Label_Reversed.ttf);
+}
+
+@font-face {
+	font-family: "old";
+	src: url(font/home/OldNewspaperTypes.ttf);
+}
+
+@font-face {
+	font-family: "lek";
+	src: url(font/home/Lekton-Regular.ttf);
+}
+
+@import url('https://fonts.googleapis.com/css?family=Lekton&display=swap');
+
+
+
+
+/*----- BODY -----*/
+body {
+	background-color: #f5e5d5;
+	font-family: "lek" !important;
+}
+
+
+
+
+/*----- HEAD + HEADLINES -----*/
+#typo-title {
+	font-size: 4em;
+	line-height: 0.3em;
+	text-decoration: none;
+	font-family: "old";
+}
+
+#typo-title:hover {
+	text-decoration: none;
+}
+
+#typo-div {
+	margin-top: 2rem;
+	margin-bottom: 2rem;
+	font-family: "lek" !important;
+}
+
+small {
+	font-family: "lek";
+	font-size: 1rem !important;
+	line-height: 0.1rem !important;
+	padding: 0 !important;
+}
+
+
+/*----- NAV + BUTTON -----*/
+.first-nav > a, .documentation_link {
+	color: #454443 !important;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+#navbarDropdown:hover, .documentation_link:hover {
+	text-decoration: none;
+	text-shadow: .03rem .03rem 0 #454443;
+
+}
+
+.btn-circle {
+	font-family: "old";
+	width: 4em;
+	height: 4em;
+	border-width: 0.20rem !important;
+	background-color: #f7efe6 !important;
+	color: #454443 !important;
+
+}
+
+.btn-circle:hover {
+	/*box-shadow: .35rem .2rem 0 #454443 !important;*/
+	box-shadow:  0 0 0 0.15rem #454443;
+}
+
+
+
+/*----- IFRAME -----*/
+
+iframe {
+		margin: 0 !important;
+		border: 0;
+
+		padding-left: 0;
+		display: block;
+
+}
+.iframe_container {
+	padding: 0 !important;
+}
+
+#first{
+	height: 50vh;
+}
+
+.occupy_space {
+	display: none;
+	width: 100%;
+	height: 100%;
+	align-content: center;
+
+}
+
+#image_charging {
+	display: block;
+  	margin-left: auto;
+  	margin-right: auto;
+  	width: 7.5%;
+}
+
+body{
+	background-color: #f5e5d5 !important;
+}
+
+/*------- DROPDOWN -------*/
+
+.dropdown-item {
+	word-break: break-all;
+}
+
+.dropdown-menu {
+	text-overflow: ellipsis;
+	word-break: break-all;
+}
+
+
+/*--------------Initial page-------*/
+
+#initial {
+	display: block;
+	margin-left: 25%;
+	margin-left: 25%;
+	width: 50%;
+	text-align: center;
+
+}
+
+#initial_page_row {
+	margin-left: 25%;
+	margin-left: 25%;
+	width: 50%;
+	text-align: center;
+	padding: .5rem;
+	/*background-color: #f7efe6;
+	border: .01rem solid black;*/
+}
+
+.typewriter_effect {
+	  
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid transparent; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .25em; /* Adjust as needed */
+    animation: 
+    typing 3.5s steps(40, end),
+    blink-caret .75s step-end 3;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: orange; }
+}
+
+
+/*------ DOCUMENTATION LINK --------*/
+
+
+
+/*----- Media Queries ----*/
+
+
+@media(max-width: 768px){
+	.btn-circle {
+		margin-left: 40%;
+	}
+}
+
+
+
+
+/*--------cose da controllare 
+
+- white space: valutare se togliere il nowrap sotto i 500 pixel: se si restringe solo lo schermo toglierlo va bene, se si lavora con il responsive
+simulator di ispeziona questo non va bene. Il problema è che il nowrap obbliga l'elemento sotto a seguire la lunghezza della scritta in tutto e 
+per tutto, il wrap normal la fa andare a capo appena il contenitore finisce, bisogna decidere che fare, allo stato attuale io farei una media query 
+mirata alla risoluzione bassissima.
+
+- Col: per risolvere il problema dell'allineamento dei bottoni bisogna che sopra il "col" si indichi a risoluzioni basse quante colonne si vuole che prenda.
+Il problema è ancora qui che nel telefono la risoluzione ha una logica, è nell'ispezione e nella riduzione artificiosa della grandezza di screen che non va;
+
+----------------*/
