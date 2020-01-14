@@ -219,9 +219,9 @@ img {
 	margin-top: 1em;
 	margin-bottom: 0.2em;
 	padding: 0.3em;
-	border: 0.1em solid #FFDF8A;
 	-webkit-filter: grayscale(100%);
     filter: grayscale(100%);
+    border: 0.1em solid #FFDF8A !important;
 }
 
 figcaption {
