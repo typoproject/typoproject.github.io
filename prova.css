@@ -1,3 +1,13 @@
+/*----- Media Queries ----*/
+
+
+@media(max-width: 768px){
+	.btn-circle {
+		margin-left: 40%;
+	}
+}
+
+
 @media (max-width:305px) {
 		.btn-group-toggle{
 		padding-top:5px;
@@ -34,11 +44,9 @@
 
 /*----- BODY -----*/
 body {
-	background-color: #f5e5d5;
+	background-color: #f5e5d5 !important;
 	font-family: "lek" !important;
 }
-
-
 
 
 /*----- HEAD + HEADLINES -----*/
@@ -130,9 +138,7 @@ iframe {
   	width: 7.5%;
 }
 
-body{
-	background-color: #f5e5d5 !important;
-}
+
 
 /*------- DROPDOWN -------*/
 
@@ -195,15 +201,6 @@ body{
 /*------ DOCUMENTATION LINK --------*/
 
 
-
-/*----- Media Queries ----*/
-
-
-@media(max-width: 768px){
-	.btn-circle {
-		margin-left: 40%;
-	}
-}
 
 
 
