@@ -79,12 +79,12 @@ section{
 	letter-spacing: 1px;
 	column-count: 1;
 	word-break: normal;
-	-webkit-column-count: 1; /* Chrome, Safari, Opera */
-  	-moz-column-count: 1; /* Firefox */
-  	column-gap: 10%;
-  	margin-top: 13%;
-	margin-bottom: 21%;
+  	margin-top: 34%;
+	margin-bottom: 55%;
 
+}
+section:last-of-type{
+	margin-bottom: 0% !important;
 }
 figure{
 	padding: 0px;
