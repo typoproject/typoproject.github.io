@@ -325,3 +325,6 @@ figure > table:nth-of-type(even) {
 	padding-left: .1em;
 }
 
+article.eu_directive > ol {
+	padding-inline-start: 1em !important;
+}
