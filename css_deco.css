@@ -350,7 +350,7 @@ figure > table:nth-of-type(even) {
 }
 
 article.eu_directive > article {
-	padding: 0;
+	padding: 0 !important;
 }
 
 
