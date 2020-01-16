@@ -478,24 +478,44 @@ h5 {
 	to{opacity: 1;}
 }
 
-@keyframes animation_nested{
+@keyframes animation_nested_2{
 
 	from{margin-right: 50%;}
 	to{margin-right: 0%;}
+	from{margin-left: 50%;}
+	to{margin-left: 5%;}
+	from{opacity: 0;}
+	to{opacity: 1;}
+}
+@-webkit-keyframes animation_nested_2{
+
+	from{margin-right: 50%;}
+	to{margin-right: 0%;}
+	from{margin-left: 50%;}
+	to{margin-left: 5%;}
+	from{opacity: 0;}
+	to{opacity: 1;}
+}
+
+@keyframes animation_nested_1{
+
+	from{margin-right: 50%;}
+	to{margin-right: 5%;}
 	from{margin-left: 50%;}
 	to{margin-left: 0%;}
 	from{opacity: 0;}
 	to{opacity: 1;}
 }
-@-webkit-keyframes animation_nested{
+@-webkit-keyframes animation_nested_1{
 
 	from{margin-right: 50%;}
-	to{margin-right: 0%;}
+	to{margin-right: 5%;}
 	from{margin-left: 50%;}
 	to{margin-left: 0%;}
 	from{opacity: 0;}
 	to{opacity: 1;}
 }
+
 
 /*------------------------------------------------------*/
 
@@ -591,6 +611,8 @@ article.eu_directive {
 	-webkit-column-count: 1 !important; /* Chrome, Safari, Opera */
   	-moz-column-count: 1 !important; /* Firefox */
   	word-break: break-all;
+  	margin-left: 0;
+  	margin-right: 0;
 
 }
 
@@ -606,9 +628,9 @@ article.eu_directive > ul:nth-of-type(odd), ol:nth-of-type(odd) {
 	border-color: rgb(153, 204, 255);
 	border-radius: 20px;
 	background-color: rgba(217, 179, 255, 0.5);
-	-webkit-animation-name: animation_table; /* Safari 4.0 - 8.0 */
+	-webkit-animation-name: animation_nested_1; /* Safari 4.0 - 8.0 */
   	-webkit-animation-duration: 3s; /* Safari 4.0 - 8.0 */
-  	animation-name: animation_table;
+  	animation-name: animation_nested_1;
   	animation-duration: 3s;
   	animation-delay: 2s;
   	-webkit-animation-delay:2s;
@@ -647,9 +669,9 @@ article.eu_directive > ol:nth-of-type(even), ul:nth-of-type(even) {
 	border-color: rgb(153, 204, 255);
 	border-radius: 20px;
 	background-color: rgba(204, 204, 255,0.5) !important;
-	-webkit-animation-name: animation_table; /* Safari 4.0 - 8.0 */
+	-webkit-animation-name: animation_nested_2; /* Safari 4.0 - 8.0 */
   	-webkit-animation-duration: 3s; /* Safari 4.0 - 8.0 */
-  	animation-name: animation_table;
+  	animation-name: animation_nested_2;
   	animation-duration: 3s;
   	animation-delay: 2s;
   	-webkit-animation-delay:2s;
@@ -684,9 +706,9 @@ article.eu_directive > p:nth-of-type(odd){
 	height: auto;
 	background-color: rgba(217, 179, 255, 0.5);
 	animation-fill-mode: forwards;
-	-webkit-animation-name: animation_table; /* Safari 4.0 - 8.0 */
+	-webkit-animation-name: animation_nested_1; /* Safari 4.0 - 8.0 */
   	-webkit-animation-duration: 3s; /* Safari 4.0 - 8.0 */
-  	animation-name: animation_table;
+  	animation-name: animation_nested_1;
   	animation-duration: 3s;
   	opacity: 0;
 
@@ -706,9 +728,9 @@ article.eu_directive > p:nth-of-type(even){
 	height: auto;
 	background-color: rgba(204, 204, 255, 0.5);
   	animation-fill-mode: forwards;
-	-webkit-animation-name: animation_table; /* Safari 4.0 - 8.0 */
+	-webkit-animation-name: animation_nested_2; /* Safari 4.0 - 8.0 */
   	-webkit-animation-duration: 3s; /* Safari 4.0 - 8.0 */
-  	animation-name: animation_table;
+  	animation-name: animation_nested_2;
   	animation-duration: 3s;
   	animation-delay: 2s;
   	-webkit-animation-delay:2s;
@@ -730,9 +752,9 @@ article.eu_directive > h1:nth-of-type(even), article.eu_directive > h2:nth-of-ty
 	border-color: rgb(153, 204, 255);
 	border-radius: 20px;
 	background-color: rgba(255, 255, 255, 0.35);
-	-webkit-animation-name: animation_table; /* Safari 4.0 - 8.0 */
+	-webkit-animation-name: animation_nested_2; /* Safari 4.0 - 8.0 */
   	-webkit-animation-duration: 3s; /* Safari 4.0 - 8.0 */
-  	animation-name: animation_table;
+  	animation-name: animation_nested_2;
   	animation-duration: 3s;
   	animation-delay: 2s;
   	-webkit-animation-delay:2s;
@@ -751,9 +773,9 @@ article.eu_directive > h1:nth-of-type(odd), article.eu_directive > h2:nth-of-typ
 	border-color: rgb(153, 204, 255);
 	border-radius: 20px;
 	background-color: rgba(255, 255, 255, 0.35);
-	-webkit-animation-name:animation_table; /* Safari 4.0 - 8.0 */
+	-webkit-animation-name:animation_nested_1; /* Safari 4.0 - 8.0 */
   	-webkit-animation-duration: 3s; /* Safari 4.0 - 8.0 */
-  	animation-name: animation_table;
+  	animation-name: animation_nested_1;
   	animation-duration: 3s;
   	animation-delay: 2s;
   	-webkit-animation-delay:2s;
@@ -776,9 +798,9 @@ article.eu_directive > h4:nth-of-type(odd), article.eu_directive > h5:nth-of-typ
 	border-radius: 20px;
 	background-color: rgba(217, 179, 255, 0.5);
 	animation-fill-mode: forwards;
-	-webkit-animation-name: animation_table; /* Safari 4.0 - 8.0 */
+	-webkit-animation-name: animation_nested_1; /* Safari 4.0 - 8.0 */
   	-webkit-animation-duration: 3s; /* Safari 4.0 - 8.0 */
-  	animation-name: animation_table;
+  	animation-name: animation_nested_1;
   	animation-duration: 3s;
   	animation-delay: 2s;
   	-webkit-animation-delay:2s;
@@ -798,9 +820,9 @@ article.eu_directive > h4:nth-of-type(even), article.eu_directive > h5:nth-of-ty
 	border-radius: 20px;
 	background-color: rgba(204, 204, 255,0.5) !important;
 	animation-fill-mode: forwards;
-	-webkit-animation-name: animation_table; /* Safari 4.0 - 8.0 */
+	-webkit-animation-name: animation_nested_2; /* Safari 4.0 - 8.0 */
   	-webkit-animation-duration: 3s; /* Safari 4.0 - 8.0 */
-  	animation-name: animation_table;
+  	animation-name: animation_nested_2;
   	animation-duration: 3s;
   	animation-delay: 2s;
   	-webkit-animation-delay:2s;
@@ -823,9 +845,9 @@ border-width: 7px;
 	height: auto;
 	background-color: rgba(204, 204, 255, 0.5);
 	animation-fill-mode: forwards;
-	-webkit-animation-name: animation_table; /* Safari 4.0 - 8.0 */
+	-webkit-animation-name: animation_nested_2; /* Safari 4.0 - 8.0 */
   	-webkit-animation-duration: 3s; /* Safari 4.0 - 8.0 */
-  	animation-name: animation_table;
+  	animation-name: animation_nested_2;
   	animation-duration: 3s;
   	border-radius: 20px;
   	animation-delay: 2s;
@@ -847,9 +869,9 @@ border-width: 7px;
 	height: auto;
 	background-color: rgba(217, 179, 255, 0.5);
 	animation-fill-mode: forwards;
-	-webkit-animation-name: animation_table; /* Safari 4.0 - 8.0 */
+	-webkit-animation-name: animation_nested_1; /* Safari 4.0 - 8.0 */
   	-webkit-animation-duration: 3s; /* Safari 4.0 - 8.0 */
-  	animation-name: animation_table;
+  	animation-name: animation_nested_1;
   	animation-duration: 3s;
   	border-radius: 20px;
   	animation-delay: 2s;
@@ -921,9 +943,9 @@ article.eu_directive > footer:nth-of-type(even) {
 	height: auto;
 	background-color: rgba(204, 204, 255, 0.5);
   	animation-fill-mode: forwards;
-	-webkit-animation-name: animation_table; /* Safari 4.0 - 8.0 */
+	-webkit-animation-name: animation_nested_2; /* Safari 4.0 - 8.0 */
   	-webkit-animation-duration: 3s; /* Safari 4.0 - 8.0 */
-  	animation-name: animation_2;
+  	animation-name: animation_nested_2;
   	animation-duration: 3s;
   	animation-delay: 2s;
   	-webkit-animation-delay:2s;
@@ -942,9 +964,9 @@ article.eu_directive > footer:nth-of-type(odd) {
 	height: auto;
 	background-color: rgba(217, 179, 255, 0.5);
 	animation-fill-mode: forwards;
-	-webkit-animation-name: animation_table; /* Safari 4.0 - 8.0 */
+	-webkit-animation-name: animation_nested_1; /* Safari 4.0 - 8.0 */
   	-webkit-animation-duration: 3s; /* Safari 4.0 - 8.0 */
-  	animation-name: animation_table;
+  	animation-name: animation_nested_1;
   	animation-duration: 3s;
 	opacity: 0;
   	animation-delay: 2s;
